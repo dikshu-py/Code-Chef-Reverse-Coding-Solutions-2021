@@ -1,0 +1,17 @@
+try:
+    for _ in range(int(input())):
+        p_size = int(input())
+        z = (p_size - 1) // 2
+        k = 1
+        global_list = []
+        for i in range(1, p_size + 1, 2):
+            global_list.append(" " * z + "*" * i)
+            z -= 1
+        for items in global_list:
+            print(items)
+        global_list.reverse()
+        global_list.pop(0)
+        for ii in global_list:
+            print(ii)
+except:
+    pass

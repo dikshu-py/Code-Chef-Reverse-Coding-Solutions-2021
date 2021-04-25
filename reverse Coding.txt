@@ -1,0 +1,15 @@
+try:
+    for _ in range(int(input())):
+        a = int(input())
+
+        gl = [i for i in range(1, a + 1)]
+        chances = len(gl) // 2
+        print(*gl)
+        for i in range(chances):
+            cc1 = gl[i]
+            cc2 = gl[-i - 1]
+            gl[i] = cc2
+            gl[-i - 1] = cc1
+            print(*gl)
+except:
+    pass

@@ -1,0 +1,12 @@
+try:
+    import string
+
+    for _ in range(int(input())):
+        N, K = map(int, input().split())
+        gl = list(string.ascii_lowercase[0:N])
+        for i in range(K):
+            print("".join(gl))
+            cache = gl.pop(0)
+            gl.append(cache)
+except:
+    pass
